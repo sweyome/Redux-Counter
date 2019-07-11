@@ -25,12 +25,11 @@ class Counter extends Component {
     return (
       <p className ="app">
         Clicked: {this.props.count} times
-        <button className ="btn" onClick={() => this.props.increment()}>+</button>
-        <button className ="btn"  onClick={() => this.props.decrement()}>-</button>
-        {/* Uncomment these button tags if you got
-                around to implementing the extra credit functions */}
-        <button   onClick={this.incrementIfOdd}>Increment if odd</button>
-        <button   onClick={this.incrementAsync}>Increment async</button>
+        <button className ="btn-primary" onClick={() => this.props.increment()}>+</button>
+        <button className ="btn-primary"  onClick={() => this.props.decrement()}>-</button>
+    
+        <button  className ="btn-success" onClick={this.incrementIfOdd}>Increment if odd</button>
+        <button  className ="btn-success" onClick={this.incrementAsync}>Increment async</button>
       </p>
     );
   }
